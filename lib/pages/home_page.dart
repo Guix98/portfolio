@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttericon/octicons_icons.dart';
 import 'package:fluttericon/typicons_icons.dart';
 
 class HomePage extends StatefulWidget {
@@ -16,7 +17,7 @@ class _HomePageState extends State<HomePage> {
     Center(child: Text("Skills Page")),
     Center(child: Text("About Page")),
     Center(child: Text("Education Page")),
-    // Center(child: Text("Projects Page")),
+    Center(child: Text("Projects Page")),
   ];
 
   void _onItemTapped(int index) {
@@ -35,9 +36,10 @@ class _HomePageState extends State<HomePage> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Typicons.heart),
             label: 'Interests',
           ),
           BottomNavigationBarItem(
@@ -45,17 +47,17 @@ class _HomePageState extends State<HomePage> {
             label: 'Skills',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
+            icon: Icon(Typicons.user),
             label: 'About',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
+            icon: Icon(Octicons.mortar_board),
             label: 'Education',
           ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(Icons.settings),
-          //   label: 'Projects',
-          // ),
+          BottomNavigationBarItem(
+            icon: Icon(Typicons.mobile),
+            label: 'Projects',
+          ),
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
