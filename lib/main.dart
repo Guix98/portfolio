@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Guix Portfolio',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: AppColors.backgroundColor,
         appBarTheme: AppBarTheme(backgroundColor: AppColors.backgroundColor),
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.ubuntuTextTheme(),
         colorScheme: ColorScheme.fromSeed(
           brightness: Brightness.dark,
-          seedColor: AppColors.secondaryColor,
+          seedColor: AppColors.secondaryMint,
         ),
         useMaterial3: true,
       ),
