@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:guix_portfolio/theme/tokens.dart';
 
 class PaintSplash1 extends StatelessWidget {
   final double width;
-  const PaintSplash1({super.key, required this.width});
+  final Color color;
+  const PaintSplash1({super.key, required this.width, required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -12,12 +12,14 @@ class PaintSplash1 extends StatelessWidget {
         width,
         (width * 1.055299539170507).toDouble(),
       ),
-      painter: RPSCustomPainter(),
+      painter: RPSCustomPainter(color),
     );
   }
 }
 
 class RPSCustomPainter extends CustomPainter {
+  final Color color;
+  const RPSCustomPainter(this.color);
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();
@@ -39,7 +41,7 @@ class RPSCustomPainter extends CustomPainter {
     path_0.close();
 
     Paint paint0Fill = Paint()..style = PaintingStyle.fill;
-    paint0Fill.color = AppColors.secondaryMint;
+    paint0Fill.color = color;
     canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
@@ -61,7 +63,7 @@ class RPSCustomPainter extends CustomPainter {
     path_1.close();
 
     Paint paint1Fill = Paint()..style = PaintingStyle.fill;
-    paint1Fill.color = AppColors.secondaryMint;
+    paint1Fill.color = color;
     canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
@@ -83,7 +85,7 @@ class RPSCustomPainter extends CustomPainter {
     path_2.close();
 
     Paint paint2Fill = Paint()..style = PaintingStyle.fill;
-    paint2Fill.color = AppColors.secondaryMint;
+    paint2Fill.color = color;
     canvas.drawPath(path_2, paint2Fill);
 
     Path path_3 = Path();
@@ -105,7 +107,7 @@ class RPSCustomPainter extends CustomPainter {
     path_3.close();
 
     Paint paint3Fill = Paint()..style = PaintingStyle.fill;
-    paint3Fill.color = AppColors.secondaryMint;
+    paint3Fill.color = color;
     canvas.drawPath(path_3, paint3Fill);
 
     Path path_4 = Path();
@@ -155,7 +157,7 @@ class RPSCustomPainter extends CustomPainter {
     path_4.close();
 
     Paint paint4Fill = Paint()..style = PaintingStyle.fill;
-    paint4Fill.color = AppColors.secondaryMint;
+    paint4Fill.color = color;
     canvas.drawPath(path_4, paint4Fill);
 
     Path path_5 = Path();
@@ -207,7 +209,7 @@ class RPSCustomPainter extends CustomPainter {
     path_5.close();
 
     Paint paint5Fill = Paint()..style = PaintingStyle.fill;
-    paint5Fill.color = AppColors.secondaryMint;
+    paint5Fill.color = color;
     canvas.drawPath(path_5, paint5Fill);
 
     Path path_6 = Path();
@@ -229,7 +231,7 @@ class RPSCustomPainter extends CustomPainter {
     path_6.close();
 
     Paint paint6Fill = Paint()..style = PaintingStyle.fill;
-    paint6Fill.color = AppColors.secondaryMint;
+    paint6Fill.color = color;
     canvas.drawPath(path_6, paint6Fill);
 
     Path path_7 = Path();
@@ -251,7 +253,7 @@ class RPSCustomPainter extends CustomPainter {
     path_7.close();
 
     Paint paint7Fill = Paint()..style = PaintingStyle.fill;
-    paint7Fill.color = AppColors.secondaryMint;
+    paint7Fill.color = color;
     canvas.drawPath(path_7, paint7Fill);
 
     Path path_8 = Path();
@@ -280,7 +282,7 @@ class RPSCustomPainter extends CustomPainter {
     path_8.close();
 
     Paint paint8Fill = Paint()..style = PaintingStyle.fill;
-    paint8Fill.color = AppColors.secondaryMint;
+    paint8Fill.color = color;
     canvas.drawPath(path_8, paint8Fill);
 
     Path path_9 = Path();
@@ -302,7 +304,7 @@ class RPSCustomPainter extends CustomPainter {
     path_9.close();
 
     Paint paint9Fill = Paint()..style = PaintingStyle.fill;
-    paint9Fill.color = AppColors.secondaryMint;
+    paint9Fill.color = color;
     canvas.drawPath(path_9, paint9Fill);
 
     Path path_10 = Path();
@@ -331,7 +333,7 @@ class RPSCustomPainter extends CustomPainter {
     path_10.close();
 
     Paint paint10Fill = Paint()..style = PaintingStyle.fill;
-    paint10Fill.color = AppColors.secondaryMint;
+    paint10Fill.color = color;
     canvas.drawPath(path_10, paint10Fill);
 
     Path path_11 = Path();
@@ -367,7 +369,7 @@ class RPSCustomPainter extends CustomPainter {
     path_11.close();
 
     Paint paint11Fill = Paint()..style = PaintingStyle.fill;
-    paint11Fill.color = AppColors.secondaryMint;
+    paint11Fill.color = color;
     canvas.drawPath(path_11, paint11Fill);
 
     Path path_12 = Path();
@@ -396,7 +398,7 @@ class RPSCustomPainter extends CustomPainter {
     path_12.close();
 
     Paint paint12Fill = Paint()..style = PaintingStyle.fill;
-    paint12Fill.color = AppColors.secondaryMint;
+    paint12Fill.color = color;
     canvas.drawPath(path_12, paint12Fill);
 
     Path path_13 = Path();
@@ -418,7 +420,7 @@ class RPSCustomPainter extends CustomPainter {
     path_13.close();
 
     Paint paint13Fill = Paint()..style = PaintingStyle.fill;
-    paint13Fill.color = AppColors.secondaryMint;
+    paint13Fill.color = color;
     canvas.drawPath(path_13, paint13Fill);
 
     Path path_14 = Path();
@@ -454,7 +456,7 @@ class RPSCustomPainter extends CustomPainter {
     path_14.close();
 
     Paint paint14Fill = Paint()..style = PaintingStyle.fill;
-    paint14Fill.color = AppColors.secondaryMint;
+    paint14Fill.color = color;
     canvas.drawPath(path_14, paint14Fill);
 
     Path path_15 = Path();
@@ -700,7 +702,7 @@ class RPSCustomPainter extends CustomPainter {
     path_15.close();
 
     Paint paint15Fill = Paint()..style = PaintingStyle.fill;
-    paint15Fill.color = AppColors.secondaryMint;
+    paint15Fill.color = color;
     canvas.drawPath(path_15, paint15Fill);
 
     Path path_16 = Path();
@@ -750,7 +752,7 @@ class RPSCustomPainter extends CustomPainter {
     path_16.close();
 
     Paint paint16Fill = Paint()..style = PaintingStyle.fill;
-    paint16Fill.color = AppColors.secondaryMint;
+    paint16Fill.color = color;
     canvas.drawPath(path_16, paint16Fill);
 
     Path path_17 = Path();
@@ -765,7 +767,7 @@ class RPSCustomPainter extends CustomPainter {
     path_17.close();
 
     Paint paint17Fill = Paint()..style = PaintingStyle.fill;
-    paint17Fill.color = AppColors.secondaryMint;
+    paint17Fill.color = color;
     canvas.drawPath(path_17, paint17Fill);
 
     Path path_18 = Path();
@@ -850,7 +852,7 @@ class RPSCustomPainter extends CustomPainter {
     path_18.close();
 
     Paint paint18Fill = Paint()..style = PaintingStyle.fill;
-    paint18Fill.color = AppColors.secondaryMint;
+    paint18Fill.color = color;
     canvas.drawPath(path_18, paint18Fill);
 
     Path path_19 = Path();
@@ -872,7 +874,7 @@ class RPSCustomPainter extends CustomPainter {
     path_19.close();
 
     Paint paint19Fill = Paint()..style = PaintingStyle.fill;
-    paint19Fill.color = AppColors.secondaryMint;
+    paint19Fill.color = color;
     canvas.drawPath(path_19, paint19Fill);
 
     Path path_20 = Path();
@@ -922,7 +924,7 @@ class RPSCustomPainter extends CustomPainter {
     path_20.close();
 
     Paint paint20Fill = Paint()..style = PaintingStyle.fill;
-    paint20Fill.color = AppColors.secondaryMint;
+    paint20Fill.color = color;
     canvas.drawPath(path_20, paint20Fill);
 
     Path path_21 = Path();
@@ -951,7 +953,7 @@ class RPSCustomPainter extends CustomPainter {
     path_21.close();
 
     Paint paint21Fill = Paint()..style = PaintingStyle.fill;
-    paint21Fill.color = AppColors.secondaryMint;
+    paint21Fill.color = color;
     canvas.drawPath(path_21, paint21Fill);
 
     Path path_22 = Path();
@@ -980,7 +982,7 @@ class RPSCustomPainter extends CustomPainter {
     path_22.close();
 
     Paint paint22Fill = Paint()..style = PaintingStyle.fill;
-    paint22Fill.color = AppColors.secondaryMint;
+    paint22Fill.color = color;
     canvas.drawPath(path_22, paint22Fill);
 
     Path path_23 = Path();
@@ -1009,7 +1011,7 @@ class RPSCustomPainter extends CustomPainter {
     path_23.close();
 
     Paint paint23Fill = Paint()..style = PaintingStyle.fill;
-    paint23Fill.color = AppColors.secondaryMint;
+    paint23Fill.color = color;
     canvas.drawPath(path_23, paint23Fill);
 
     Path path_24 = Path();
@@ -1038,7 +1040,7 @@ class RPSCustomPainter extends CustomPainter {
     path_24.close();
 
     Paint paint24Fill = Paint()..style = PaintingStyle.fill;
-    paint24Fill.color = AppColors.secondaryMint;
+    paint24Fill.color = color;
     canvas.drawPath(path_24, paint24Fill);
 
     Path path_25 = Path();
@@ -1137,7 +1139,7 @@ class RPSCustomPainter extends CustomPainter {
     path_25.close();
 
     Paint paint25Fill = Paint()..style = PaintingStyle.fill;
-    paint25Fill.color = AppColors.secondaryMint;
+    paint25Fill.color = color;
     canvas.drawPath(path_25, paint25Fill);
 
     Path path_26 = Path();
@@ -1166,7 +1168,7 @@ class RPSCustomPainter extends CustomPainter {
     path_26.close();
 
     Paint paint26Fill = Paint()..style = PaintingStyle.fill;
-    paint26Fill.color = AppColors.secondaryMint;
+    paint26Fill.color = color;
     canvas.drawPath(path_26, paint26Fill);
 
     Path path_27 = Path();
@@ -1188,7 +1190,7 @@ class RPSCustomPainter extends CustomPainter {
     path_27.close();
 
     Paint paint27Fill = Paint()..style = PaintingStyle.fill;
-    paint27Fill.color = AppColors.secondaryMint;
+    paint27Fill.color = color;
     canvas.drawPath(path_27, paint27Fill);
 
     Path path_28 = Path();
@@ -1224,7 +1226,7 @@ class RPSCustomPainter extends CustomPainter {
     path_28.close();
 
     Paint paint28Fill = Paint()..style = PaintingStyle.fill;
-    paint28Fill.color = AppColors.secondaryMint;
+    paint28Fill.color = color;
     canvas.drawPath(path_28, paint28Fill);
 
     Path path_29 = Path();
@@ -1239,7 +1241,7 @@ class RPSCustomPainter extends CustomPainter {
     path_29.close();
 
     Paint paint29Fill = Paint()..style = PaintingStyle.fill;
-    paint29Fill.color = AppColors.secondaryMint;
+    paint29Fill.color = color;
     canvas.drawPath(path_29, paint29Fill);
 
     Path path_30 = Path();
@@ -1261,7 +1263,7 @@ class RPSCustomPainter extends CustomPainter {
     path_30.close();
 
     Paint paint30Fill = Paint()..style = PaintingStyle.fill;
-    paint30Fill.color = AppColors.secondaryMint;
+    paint30Fill.color = color;
     canvas.drawPath(path_30, paint30Fill);
 
     Path path_31 = Path();
@@ -1283,7 +1285,7 @@ class RPSCustomPainter extends CustomPainter {
     path_31.close();
 
     Paint paint31Fill = Paint()..style = PaintingStyle.fill;
-    paint31Fill.color = AppColors.secondaryMint;
+    paint31Fill.color = color;
     canvas.drawPath(path_31, paint31Fill);
 
     Path path_32 = Path();
@@ -1333,7 +1335,7 @@ class RPSCustomPainter extends CustomPainter {
     path_32.close();
 
     Paint paint32Fill = Paint()..style = PaintingStyle.fill;
-    paint32Fill.color = AppColors.secondaryMint;
+    paint32Fill.color = color;
     canvas.drawPath(path_32, paint32Fill);
 
     Path path_33 = Path();
@@ -1390,7 +1392,7 @@ class RPSCustomPainter extends CustomPainter {
     path_33.close();
 
     Paint paint33Fill = Paint()..style = PaintingStyle.fill;
-    paint33Fill.color = AppColors.secondaryMint;
+    paint33Fill.color = color;
     canvas.drawPath(path_33, paint33Fill);
 
     Path path_34 = Path();
@@ -1461,7 +1463,7 @@ class RPSCustomPainter extends CustomPainter {
     path_34.close();
 
     Paint paint34Fill = Paint()..style = PaintingStyle.fill;
-    paint34Fill.color = AppColors.secondaryMint;
+    paint34Fill.color = color;
     canvas.drawPath(path_34, paint34Fill);
 
     Path path_35 = Path();
@@ -1490,7 +1492,7 @@ class RPSCustomPainter extends CustomPainter {
     path_35.close();
 
     Paint paint35Fill = Paint()..style = PaintingStyle.fill;
-    paint35Fill.color = AppColors.secondaryMint;
+    paint35Fill.color = color;
     canvas.drawPath(path_35, paint35Fill);
 
     Path path_36 = Path();
@@ -1533,7 +1535,7 @@ class RPSCustomPainter extends CustomPainter {
     path_36.close();
 
     Paint paint36Fill = Paint()..style = PaintingStyle.fill;
-    paint36Fill.color = AppColors.secondaryMint;
+    paint36Fill.color = color;
     canvas.drawPath(path_36, paint36Fill);
 
     Path path_37 = Path();
@@ -1611,7 +1613,7 @@ class RPSCustomPainter extends CustomPainter {
     path_37.close();
 
     Paint paint37Fill = Paint()..style = PaintingStyle.fill;
-    paint37Fill.color = AppColors.secondaryMint;
+    paint37Fill.color = color;
     canvas.drawPath(path_37, paint37Fill);
 
     Path path_38 = Path();
@@ -1668,7 +1670,7 @@ class RPSCustomPainter extends CustomPainter {
     path_38.close();
 
     Paint paint38Fill = Paint()..style = PaintingStyle.fill;
-    paint38Fill.color = AppColors.secondaryMint;
+    paint38Fill.color = color;
     canvas.drawPath(path_38, paint38Fill);
 
     Path path_39 = Path();
@@ -1690,7 +1692,7 @@ class RPSCustomPainter extends CustomPainter {
     path_39.close();
 
     Paint paint39Fill = Paint()..style = PaintingStyle.fill;
-    paint39Fill.color = AppColors.secondaryMint;
+    paint39Fill.color = color;
     canvas.drawPath(path_39, paint39Fill);
 
     Path path_40 = Path();
@@ -1761,7 +1763,7 @@ class RPSCustomPainter extends CustomPainter {
     path_40.close();
 
     Paint paint40Fill = Paint()..style = PaintingStyle.fill;
-    paint40Fill.color = AppColors.secondaryMint;
+    paint40Fill.color = color;
     canvas.drawPath(path_40, paint40Fill);
 
     Path path_41 = Path();
@@ -1797,7 +1799,7 @@ class RPSCustomPainter extends CustomPainter {
     path_41.close();
 
     Paint paint41Fill = Paint()..style = PaintingStyle.fill;
-    paint41Fill.color = AppColors.secondaryMint;
+    paint41Fill.color = color;
     canvas.drawPath(path_41, paint41Fill);
 
     Path path_42 = Path();
@@ -1819,7 +1821,7 @@ class RPSCustomPainter extends CustomPainter {
     path_42.close();
 
     Paint paint42Fill = Paint()..style = PaintingStyle.fill;
-    paint42Fill.color = AppColors.secondaryMint;
+    paint42Fill.color = color;
     canvas.drawPath(path_42, paint42Fill);
 
     Path path_43 = Path();
@@ -1841,7 +1843,7 @@ class RPSCustomPainter extends CustomPainter {
     path_43.close();
 
     Paint paint43Fill = Paint()..style = PaintingStyle.fill;
-    paint43Fill.color = AppColors.secondaryMint;
+    paint43Fill.color = color;
     canvas.drawPath(path_43, paint43Fill);
 
     Path path_44 = Path();
@@ -1884,7 +1886,7 @@ class RPSCustomPainter extends CustomPainter {
     path_44.close();
 
     Paint paint44Fill = Paint()..style = PaintingStyle.fill;
-    paint44Fill.color = AppColors.secondaryMint;
+    paint44Fill.color = color;
     canvas.drawPath(path_44, paint44Fill);
 
     Path path_45 = Path();
@@ -1906,7 +1908,7 @@ class RPSCustomPainter extends CustomPainter {
     path_45.close();
 
     Paint paint45Fill = Paint()..style = PaintingStyle.fill;
-    paint45Fill.color = AppColors.secondaryMint;
+    paint45Fill.color = color;
     canvas.drawPath(path_45, paint45Fill);
 
     Path path_46 = Path();
@@ -1935,7 +1937,7 @@ class RPSCustomPainter extends CustomPainter {
     path_46.close();
 
     Paint paint46Fill = Paint()..style = PaintingStyle.fill;
-    paint46Fill.color = AppColors.secondaryMint;
+    paint46Fill.color = color;
     canvas.drawPath(path_46, paint46Fill);
 
     Path path_47 = Path();
@@ -1957,7 +1959,7 @@ class RPSCustomPainter extends CustomPainter {
     path_47.close();
 
     Paint paint47Fill = Paint()..style = PaintingStyle.fill;
-    paint47Fill.color = AppColors.secondaryMint;
+    paint47Fill.color = color;
     canvas.drawPath(path_47, paint47Fill);
 
     Path path_48 = Path();
@@ -2035,7 +2037,7 @@ class RPSCustomPainter extends CustomPainter {
     path_48.close();
 
     Paint paint48Fill = Paint()..style = PaintingStyle.fill;
-    paint48Fill.color = AppColors.secondaryMint;
+    paint48Fill.color = color;
     canvas.drawPath(path_48, paint48Fill);
 
     Path path_49 = Path();
@@ -2071,7 +2073,7 @@ class RPSCustomPainter extends CustomPainter {
     path_49.close();
 
     Paint paint49Fill = Paint()..style = PaintingStyle.fill;
-    paint49Fill.color = AppColors.secondaryMint;
+    paint49Fill.color = color;
     canvas.drawPath(path_49, paint49Fill);
 
     Path path_50 = Path();
@@ -2100,7 +2102,7 @@ class RPSCustomPainter extends CustomPainter {
     path_50.close();
 
     Paint paint50Fill = Paint()..style = PaintingStyle.fill;
-    paint50Fill.color = AppColors.secondaryMint;
+    paint50Fill.color = color;
     canvas.drawPath(path_50, paint50Fill);
 
     Path path_51 = Path();
@@ -2122,7 +2124,7 @@ class RPSCustomPainter extends CustomPainter {
     path_51.close();
 
     Paint paint51Fill = Paint()..style = PaintingStyle.fill;
-    paint51Fill.color = AppColors.secondaryMint;
+    paint51Fill.color = color;
     canvas.drawPath(path_51, paint51Fill);
 
     Path path_52 = Path();
@@ -2368,7 +2370,7 @@ class RPSCustomPainter extends CustomPainter {
     path_52.close();
 
     Paint paint52Fill = Paint()..style = PaintingStyle.fill;
-    paint52Fill.color = AppColors.secondaryMint;
+    paint52Fill.color = color;
     canvas.drawPath(path_52, paint52Fill);
 
     Path path_53 = Path();
@@ -2425,7 +2427,7 @@ class RPSCustomPainter extends CustomPainter {
     path_53.close();
 
     Paint paint53Fill = Paint()..style = PaintingStyle.fill;
-    paint53Fill.color = AppColors.secondaryMint;
+    paint53Fill.color = color;
     canvas.drawPath(path_53, paint53Fill);
 
     Path path_54 = Path();
@@ -2496,7 +2498,7 @@ class RPSCustomPainter extends CustomPainter {
     path_54.close();
 
     Paint paint54Fill = Paint()..style = PaintingStyle.fill;
-    paint54Fill.color = AppColors.secondaryMint;
+    paint54Fill.color = color;
     canvas.drawPath(path_54, paint54Fill);
 
     Path path_55 = Path();
@@ -2518,7 +2520,7 @@ class RPSCustomPainter extends CustomPainter {
     path_55.close();
 
     Paint paint55Fill = Paint()..style = PaintingStyle.fill;
-    paint55Fill.color = AppColors.secondaryMint;
+    paint55Fill.color = color;
     canvas.drawPath(path_55, paint55Fill);
 
     Path path_56 = Path();
@@ -2603,7 +2605,7 @@ class RPSCustomPainter extends CustomPainter {
     path_56.close();
 
     Paint paint56Fill = Paint()..style = PaintingStyle.fill;
-    paint56Fill.color = AppColors.secondaryMint;
+    paint56Fill.color = color;
     canvas.drawPath(path_56, paint56Fill);
 
     Path path_57 = Path();
@@ -2632,7 +2634,7 @@ class RPSCustomPainter extends CustomPainter {
     path_57.close();
 
     Paint paint57Fill = Paint()..style = PaintingStyle.fill;
-    paint57Fill.color = AppColors.secondaryMint;
+    paint57Fill.color = color;
     canvas.drawPath(path_57, paint57Fill);
 
     Path path_58 = Path();
@@ -2668,7 +2670,7 @@ class RPSCustomPainter extends CustomPainter {
     path_58.close();
 
     Paint paint58Fill = Paint()..style = PaintingStyle.fill;
-    paint58Fill.color = AppColors.secondaryMint;
+    paint58Fill.color = color;
     canvas.drawPath(path_58, paint58Fill);
 
     Path path_59 = Path();
@@ -2683,7 +2685,7 @@ class RPSCustomPainter extends CustomPainter {
     path_59.close();
 
     Paint paint59Fill = Paint()..style = PaintingStyle.fill;
-    paint59Fill.color = AppColors.secondaryMint;
+    paint59Fill.color = color;
     canvas.drawPath(path_59, paint59Fill);
 
     Path path_60 = Path();
@@ -2719,7 +2721,7 @@ class RPSCustomPainter extends CustomPainter {
     path_60.close();
 
     Paint paint60Fill = Paint()..style = PaintingStyle.fill;
-    paint60Fill.color = AppColors.secondaryMint;
+    paint60Fill.color = color;
     canvas.drawPath(path_60, paint60Fill);
 
     Path path_61 = Path();
@@ -2748,7 +2750,7 @@ class RPSCustomPainter extends CustomPainter {
     path_61.close();
 
     Paint paint61Fill = Paint()..style = PaintingStyle.fill;
-    paint61Fill.color = AppColors.secondaryMint;
+    paint61Fill.color = color;
     canvas.drawPath(path_61, paint61Fill);
 
     Path path_62 = Path();
@@ -2770,7 +2772,7 @@ class RPSCustomPainter extends CustomPainter {
     path_62.close();
 
     Paint paint62Fill = Paint()..style = PaintingStyle.fill;
-    paint62Fill.color = AppColors.secondaryMint;
+    paint62Fill.color = color;
     canvas.drawPath(path_62, paint62Fill);
 
     Path path_63 = Path();
@@ -2792,7 +2794,7 @@ class RPSCustomPainter extends CustomPainter {
     path_63.close();
 
     Paint paint63Fill = Paint()..style = PaintingStyle.fill;
-    paint63Fill.color = AppColors.secondaryMint;
+    paint63Fill.color = color;
     canvas.drawPath(path_63, paint63Fill);
 
     Path path_64 = Path();
@@ -2856,7 +2858,7 @@ class RPSCustomPainter extends CustomPainter {
     path_64.close();
 
     Paint paint64Fill = Paint()..style = PaintingStyle.fill;
-    paint64Fill.color = AppColors.secondaryMint;
+    paint64Fill.color = color;
     canvas.drawPath(path_64, paint64Fill);
 
     Path path_65 = Path();
@@ -2878,7 +2880,7 @@ class RPSCustomPainter extends CustomPainter {
     path_65.close();
 
     Paint paint65Fill = Paint()..style = PaintingStyle.fill;
-    paint65Fill.color = AppColors.secondaryMint;
+    paint65Fill.color = color;
     canvas.drawPath(path_65, paint65Fill);
 
     Path path_66 = Path();
@@ -2900,7 +2902,7 @@ class RPSCustomPainter extends CustomPainter {
     path_66.close();
 
     Paint paint66Fill = Paint()..style = PaintingStyle.fill;
-    paint66Fill.color = AppColors.secondaryMint;
+    paint66Fill.color = color;
     canvas.drawPath(path_66, paint66Fill);
 
     Path path_67 = Path();
@@ -2936,7 +2938,7 @@ class RPSCustomPainter extends CustomPainter {
     path_67.close();
 
     Paint paint67Fill = Paint()..style = PaintingStyle.fill;
-    paint67Fill.color = AppColors.secondaryMint;
+    paint67Fill.color = color;
     canvas.drawPath(path_67, paint67Fill);
 
     Path path_68 = Path();
@@ -2965,7 +2967,7 @@ class RPSCustomPainter extends CustomPainter {
     path_68.close();
 
     Paint paint68Fill = Paint()..style = PaintingStyle.fill;
-    paint68Fill.color = AppColors.secondaryMint;
+    paint68Fill.color = color;
     canvas.drawPath(path_68, paint68Fill);
 
     Path path_69 = Path();
@@ -3022,7 +3024,7 @@ class RPSCustomPainter extends CustomPainter {
     path_69.close();
 
     Paint paint69Fill = Paint()..style = PaintingStyle.fill;
-    paint69Fill.color = AppColors.secondaryMint;
+    paint69Fill.color = color;
     canvas.drawPath(path_69, paint69Fill);
 
     Path path_70 = Path();
@@ -3044,7 +3046,7 @@ class RPSCustomPainter extends CustomPainter {
     path_70.close();
 
     Paint paint70Fill = Paint()..style = PaintingStyle.fill;
-    paint70Fill.color = AppColors.secondaryMint;
+    paint70Fill.color = color;
     canvas.drawPath(path_70, paint70Fill);
 
     Path path_71 = Path();
@@ -3073,7 +3075,7 @@ class RPSCustomPainter extends CustomPainter {
     path_71.close();
 
     Paint paint71Fill = Paint()..style = PaintingStyle.fill;
-    paint71Fill.color = AppColors.secondaryMint;
+    paint71Fill.color = color;
     canvas.drawPath(path_71, paint71Fill);
 
     Path path_72 = Path();
@@ -3095,7 +3097,7 @@ class RPSCustomPainter extends CustomPainter {
     path_72.close();
 
     Paint paint72Fill = Paint()..style = PaintingStyle.fill;
-    paint72Fill.color = AppColors.secondaryMint;
+    paint72Fill.color = color;
     canvas.drawPath(path_72, paint72Fill);
 
     Path path_73 = Path();
@@ -3117,7 +3119,7 @@ class RPSCustomPainter extends CustomPainter {
     path_73.close();
 
     Paint paint73Fill = Paint()..style = PaintingStyle.fill;
-    paint73Fill.color = AppColors.secondaryMint;
+    paint73Fill.color = color;
     canvas.drawPath(path_73, paint73Fill);
 
     Path path_74 = Path();
@@ -3160,7 +3162,7 @@ class RPSCustomPainter extends CustomPainter {
     path_74.close();
 
     Paint paint74Fill = Paint()..style = PaintingStyle.fill;
-    paint74Fill.color = AppColors.secondaryMint;
+    paint74Fill.color = color;
     canvas.drawPath(path_74, paint74Fill);
 
     Path path_75 = Path();
@@ -3203,7 +3205,7 @@ class RPSCustomPainter extends CustomPainter {
     path_75.close();
 
     Paint paint75Fill = Paint()..style = PaintingStyle.fill;
-    paint75Fill.color = AppColors.secondaryMint;
+    paint75Fill.color = color;
     canvas.drawPath(path_75, paint75Fill);
 
     Path path_76 = Path();
@@ -3225,7 +3227,7 @@ class RPSCustomPainter extends CustomPainter {
     path_76.close();
 
     Paint paint76Fill = Paint()..style = PaintingStyle.fill;
-    paint76Fill.color = AppColors.secondaryMint;
+    paint76Fill.color = color;
     canvas.drawPath(path_76, paint76Fill);
 
     Path path_77 = Path();
@@ -3275,7 +3277,7 @@ class RPSCustomPainter extends CustomPainter {
     path_77.close();
 
     Paint paint77Fill = Paint()..style = PaintingStyle.fill;
-    paint77Fill.color = AppColors.secondaryMint;
+    paint77Fill.color = color;
     canvas.drawPath(path_77, paint77Fill);
 
     Path path_78 = Path();
@@ -3311,7 +3313,7 @@ class RPSCustomPainter extends CustomPainter {
     path_78.close();
 
     Paint paint78Fill = Paint()..style = PaintingStyle.fill;
-    paint78Fill.color = AppColors.secondaryMint;
+    paint78Fill.color = color;
     canvas.drawPath(path_78, paint78Fill);
 
     Path path_79 = Path();
@@ -3368,7 +3370,7 @@ class RPSCustomPainter extends CustomPainter {
     path_79.close();
 
     Paint paint79Fill = Paint()..style = PaintingStyle.fill;
-    paint79Fill.color = AppColors.secondaryMint;
+    paint79Fill.color = color;
     canvas.drawPath(path_79, paint79Fill);
 
     Path path_80 = Path();
@@ -3390,7 +3392,7 @@ class RPSCustomPainter extends CustomPainter {
     path_80.close();
 
     Paint paint80Fill = Paint()..style = PaintingStyle.fill;
-    paint80Fill.color = AppColors.secondaryMint;
+    paint80Fill.color = color;
     canvas.drawPath(path_80, paint80Fill);
 
     Path path_81 = Path();
@@ -3419,7 +3421,7 @@ class RPSCustomPainter extends CustomPainter {
     path_81.close();
 
     Paint paint81Fill = Paint()..style = PaintingStyle.fill;
-    paint81Fill.color = AppColors.secondaryMint;
+    paint81Fill.color = color;
     canvas.drawPath(path_81, paint81Fill);
 
     Path path_82 = Path();
@@ -3455,7 +3457,7 @@ class RPSCustomPainter extends CustomPainter {
     path_82.close();
 
     Paint paint82Fill = Paint()..style = PaintingStyle.fill;
-    paint82Fill.color = AppColors.secondaryMint;
+    paint82Fill.color = color;
     canvas.drawPath(path_82, paint82Fill);
 
     Path path_83 = Path();
@@ -3470,7 +3472,7 @@ class RPSCustomPainter extends CustomPainter {
     path_83.close();
 
     Paint paint83Fill = Paint()..style = PaintingStyle.fill;
-    paint83Fill.color = AppColors.secondaryMint;
+    paint83Fill.color = color;
     canvas.drawPath(path_83, paint83Fill);
 
     Path path_84 = Path();
@@ -3492,7 +3494,7 @@ class RPSCustomPainter extends CustomPainter {
     path_84.close();
 
     Paint paint84Fill = Paint()..style = PaintingStyle.fill;
-    paint84Fill.color = AppColors.secondaryMint;
+    paint84Fill.color = color;
     canvas.drawPath(path_84, paint84Fill);
 
     Path path_85 = Path();
@@ -3542,7 +3544,7 @@ class RPSCustomPainter extends CustomPainter {
     path_85.close();
 
     Paint paint85Fill = Paint()..style = PaintingStyle.fill;
-    paint85Fill.color = AppColors.secondaryMint;
+    paint85Fill.color = color;
     canvas.drawPath(path_85, paint85Fill);
 
     Path path_86 = Path();
@@ -3564,7 +3566,7 @@ class RPSCustomPainter extends CustomPainter {
     path_86.close();
 
     Paint paint86Fill = Paint()..style = PaintingStyle.fill;
-    paint86Fill.color = AppColors.secondaryMint;
+    paint86Fill.color = color;
     canvas.drawPath(path_86, paint86Fill);
 
     Path path_87 = Path();
@@ -3593,7 +3595,7 @@ class RPSCustomPainter extends CustomPainter {
     path_87.close();
 
     Paint paint87Fill = Paint()..style = PaintingStyle.fill;
-    paint87Fill.color = AppColors.secondaryMint;
+    paint87Fill.color = color;
     canvas.drawPath(path_87, paint87Fill);
 
     Path path_88 = Path();
@@ -3615,7 +3617,7 @@ class RPSCustomPainter extends CustomPainter {
     path_88.close();
 
     Paint paint88Fill = Paint()..style = PaintingStyle.fill;
-    paint88Fill.color = AppColors.secondaryMint;
+    paint88Fill.color = color;
     canvas.drawPath(path_88, paint88Fill);
 
     Path path_89 = Path();
@@ -3665,7 +3667,7 @@ class RPSCustomPainter extends CustomPainter {
     path_89.close();
 
     Paint paint89Fill = Paint()..style = PaintingStyle.fill;
-    paint89Fill.color = AppColors.secondaryMint;
+    paint89Fill.color = color;
     canvas.drawPath(path_89, paint89Fill);
 
     Path path_90 = Path();
@@ -3694,7 +3696,7 @@ class RPSCustomPainter extends CustomPainter {
     path_90.close();
 
     Paint paint90Fill = Paint()..style = PaintingStyle.fill;
-    paint90Fill.color = AppColors.secondaryMint;
+    paint90Fill.color = color;
     canvas.drawPath(path_90, paint90Fill);
   }
 
