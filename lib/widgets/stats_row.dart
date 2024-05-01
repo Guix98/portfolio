@@ -16,14 +16,14 @@ class StatsRow extends StatelessWidget {
             stat: (DateTime.now().year - 2019).toString(),
             name: "Experience",
           ),
-          VerticalDivider(
+          const VerticalDivider(
             color: AppColors.accentWhite,
           ),
           _Stat(
             stat: (DateTime.now().year - 1997).toString(),
             name: "Age",
           ),
-          VerticalDivider(
+          const VerticalDivider(
             color: AppColors.accentWhite,
           ),
           const _Stat(
@@ -50,14 +50,14 @@ class _Stat extends StatelessWidget {
       children: [
         Text(
           stat,
-          style: TextStyle(
+          style: const TextStyle(
               color: AppColors.accentWhite,
               fontWeight: FontWeight.bold,
               fontSize: 18),
         ),
         Text(
           name,
-          style: TextStyle(color: AppColors.accentWhite, fontSize: 10),
+          style: const TextStyle(color: AppColors.accentWhite, fontSize: 10),
         ),
       ],
     );

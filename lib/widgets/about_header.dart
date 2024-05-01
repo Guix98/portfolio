@@ -11,7 +11,11 @@ class AboutHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final mq = MediaQuery.of(context).size;
-    return SizedBox(
+    return Container(
+      decoration: BoxDecoration(
+          color: Colors.black.withOpacity(0.4),
+          borderRadius:
+              const BorderRadius.vertical(bottom: Radius.circular(32))),
       width: double.infinity,
       height: mq.height * 0.3,
       child: Stack(

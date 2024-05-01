@@ -12,9 +12,10 @@ class AboutInfo extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 8),
       width: double.infinity,
       decoration: BoxDecoration(
-          color: AppColors.primaryPurple.withOpacity(0.8),
-          borderRadius: BorderRadius.circular(16)),
-      child: Column(
+          color: AppColors.accentWhite.withOpacity(0.1),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: AppColors.accentWhite)),
+      child: const Column(
         children: [
           Text(
             'Guido E. Hernani B.',

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:guix_portfolio/pages/home_page.dart';
 import 'package:guix_portfolio/theme/tokens.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,8 +18,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: AppColors.backgroundColor,
-        appBarTheme: AppBarTheme(backgroundColor: AppColors.backgroundColor),
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        appBarTheme:
+            const AppBarTheme(backgroundColor: AppColors.backgroundColor),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
             backgroundColor: AppColors.backgroundColor),
         textTheme: GoogleFonts.ubuntuTextTheme(),
         colorScheme: ColorScheme.fromSeed(
